@@ -1,0 +1,35 @@
+//*  HEADER
+//*===========================================
+
+#header {
+	@include flex-p(row,nowrap,flex-start,stretch,flex-start);
+	max-width: $mxw;
+	margin: 0 auto;
+	height: 60px;
+	width: 100%;
+	@media all and (min-width:$bp-3) {
+		height: auto;
+	}
+}
+
+#branding {
+	@include flex-c(0,0,1,50%,center)
+	padding-left: 1rem;
+	text-align: left;
+	width: 50%;
+  img {
+	  display: block;
+	  height: auto;
+	  margin: 0;
+	  max-height: 26px;
+	  width: auto;
+  }
+  @include transition(all,0.3s,ease);
+  @media all and (min-width:$bp-3) {
+	  @include flex-c(0,0,1,30%,flex-start)
+	  padding: 1.25rem 0 1.25rem 1.25rem;
+	  img {
+	  	max-height: 36px;
+  	}
+  }
+}

@@ -1,0 +1,72 @@
+//*  GLOBALS
+//*===========================================
+
+body, html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+* + * {}
+
+.clrfx:before, .clrfx:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clrfx:after { clear: both; }
+
+.clrfx { *zoom: 1; }
+
+
+//*  STRUCTURE
+//*=========================================== 
+
+html, body { 
+	height: 100%;
+	width: 100%;
+}
+
+.wrap {
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+@media all and (min-width:$bp-6) {
+	.wrap--mxw {
+		max-width: $mxw;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+
+.content {
+	max-width: $mxw;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+//*  BLOCKS
+//*===========================================
+
+.bloc {
+	padding: $space;
+	margin: 0;
+}
+
+.embed-block {
+	position: relative;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+	iframe { 
+	  position: absolute; 
+	  top: 0; 
+	  left: 0; 
+	  width: 100%; 
+	  height: 100%;
+	}
+}

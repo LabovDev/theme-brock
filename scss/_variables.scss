@@ -1,0 +1,70 @@
+//* FONTS
+//*===========================================
+
+$font-1: 'Oswald', helvetica, sans-serif;
+$font-2: 'Bitter', 'Times', serif;
+
+
+//*  FONT SCALING
+//*===========================================
+
+$min-vp-width: 320;
+$max-vp-width: 1280;
+
+$min-font: 16;
+$max-font: 20;
+
+
+//* COLORS
+//*===========================================
+
+$color-1: #C10000;				// Red
+$color-2: #990000;				// Red (hvr)
+$color-3: #0173D0;				// Blue 
+$color-4: #038EFF;				// Blue (hvr)
+$color-5: #141C4D;				// Dark Blue
+$color-6: #860101;				// Dark Red (hvr)
+
+$white: #ffffff;
+$black: #000000;
+
+
+//* GRAYS
+//*===========================================
+
+$grey-1: #333333;          // Dark Grey
+$grey-2: #B7B7B7;					 // Medium Grey
+$grey-3: #E9E9E9;          // Light Grey
+
+
+//* MARGIN & PADDING 
+//*===========================================
+
+$mxw: 1000px;
+
+$space: 1rem;
+$space-half: $space/2;
+$space-qrtr: $space/4;
+$space-and-half: $space*1.5;
+$space-2x: $space*2;
+$space-3x: $space*3;
+$space-4x: $space*4;
+
+
+//* BREAKPOINTS 
+//*===========================================
+
+$bp-1: 33.75em;          //* 540px
+$bp-2: 40.625em;         //* 650px
+$bp-3: 45em;             //* 720px
+$bp-4: 52.5em;           //* 840px
+$bp-5: 58.75em;          //* 940px
+$bp-6: 68.75em;				   //* 1100px
+
+
+//* FROSTING 
+//*===========================================
+
+$txt-shdw: 0 0 12px rgba(0,0,0,.75);
+$bx-shdw: 0 0 8px rgba(0,0,0,.5);
+$opacity: 0.5;

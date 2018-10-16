@@ -1,0 +1,26 @@
+//*  FORM ELEMENTS
+//*=========================================== 
+
+fieldset {}
+
+label {}
+
+textarea {}
+
+input {}
+
+input[type="text"], input[type="tel"],
+input[type="email"], textarea {
+  background-color: white;
+  border: 1px solid $grey-3;
+  color: $grey-2;
+  width: 100%;
+}
+
+input[type="text"] {}
+
+input[type="radio"] {}
+
+input[type="checkbox"] {}
+
+button, input[type="submit"] {}
