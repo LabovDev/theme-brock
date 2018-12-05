@@ -19,10 +19,6 @@ html, body {
   }
 }
 
-
-//*  PROPERTIES
-//*=========================================== 
-
 //*  LINKS
 //*===========================================
 
@@ -258,7 +254,7 @@ a.bttn--news {
 }
 
 .mainCntnt {
-	h3, h4, h5, h6 {
+	h2, h3, h4, h5, h6 {
 		font-family: $font-1;
 		font-weight: bold;
 		margin-bottom: $space-qrtr;
@@ -397,11 +393,26 @@ h1.ndx__sctHdr--news {
 }
 
 
-//*  INTERIOR PAGES
+//*  NEWS
 //*===========================================
 
+.entry-title {
+	font: normal normal 200%/1 $font-1;
+	margin-bottom: $space-half;
+	a { color: $color-3; }
+}
+
+.entry-meta {
+	color: $grey-2;
+	font-size: 76%;
+}
+
+.author {
+	a { color: $grey-2; }
+}
+
+.entry-content {
+	p {}
+}
 
 
-
-//*  FOOTER
-//*===========================================

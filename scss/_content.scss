@@ -24,7 +24,7 @@ img.alignright {
 
 article {}
 
-sections {}
+section {}
 
 //*  PAGE HEROS
 //*===========================================
@@ -328,6 +328,35 @@ body.page-id-21 .hero__img {
 
 .wp-caption.alignleft {
 	margin: 0 $space $space 0 !important;
+}
+
+
+//* NEWS
+//*===========================================
+
+article.post {
+	border-bottom: 1px solid $grey-3;
+	margin-bottom: $space;
+	.entry-meta {
+		margin-bottom: $space-half;
+	}
+	.entry-content {
+		@include transition(all, 0.3s, ease);
+		@media all and (min-width:$bp-1) {
+			img {
+				float: left;
+				margin: 0 $space $space 0;
+				width: 50%;
+			}
+		}
+	}
+}
+
+body.blog, body.single {
+	.mainCntnt { 
+		margin: $space-2x auto;
+		max-width: 800px;
+	}
 }
 
 //*  HIDE IT

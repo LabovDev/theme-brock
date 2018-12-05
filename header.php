@@ -29,9 +29,9 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <?php wp_head(); ?>
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('url'); ?>/wp-content/themes/brock-2018/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('url'); ?>/wp-content/themes/brock-2018/css/reset.css">
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('url'); ?>/wp-content/themes/brock-2018/css/styles.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('url'); ?>/wp-content/themes/theme-brock/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('url'); ?>/wp-content/themes/theme-brock/css/reset.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('url'); ?>/wp-content/themes/theme-brock/css/styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,600|Bitter:400,700"> 
 </head>
 
@@ -39,7 +39,7 @@
 	  
 	<header id="header" role="banner">
 		<section id="branding">
-			<a href="?page_id=1827"><img src="<?php bloginfo('url'); ?>/wp-content/themes/brock-2018/images/brock-logo.gif" alt="Brock"/></a>
+			<a href="?page_id=1827"><img src="<?php bloginfo('url'); ?>/wp-content/themes/theme-brock/images/brock-logo.gif" alt="Brock"/></a>
 		</section>
 		<nav id="nav" role="navigation">
 			<a href="#nav" class="burger" title="Show Navigation"></a>
