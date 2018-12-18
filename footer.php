@@ -43,5 +43,6 @@
 </footer> <!-- END .brockFtr -->
 
 <?php wp_footer(); ?>
+<script type="text/javascript" src="<?php bloginfo('url'); ?>/wp-content/themes/theme-brock/js/smooth-scroll.js"></script>
 </body>
 </html>

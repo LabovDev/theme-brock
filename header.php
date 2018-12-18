@@ -33,6 +33,10 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('url'); ?>/wp-content/themes/theme-brock/css/reset.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('url'); ?>/wp-content/themes/theme-brock/css/styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,600|Bitter:400,700"> 
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
 </head>
 
 <body <?php body_class(); ?>>

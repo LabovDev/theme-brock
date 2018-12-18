@@ -36,10 +36,11 @@ section {}
 		center,
 		center,
 		center
-	)
-	background-position: right top;
+	);
+	background-position: center top;
 	background-size: cover;
-	height: 45vh;
+	background-repeat: no-repeat;
+	height: 25vh;
 	width: 100%;
 	@include transition(all,0.3s,ease);
 	@media all and (min-width:$bp-3) {
@@ -61,7 +62,7 @@ body.page-id-21 .hero__img {
 			space-around,
 			flex-start,
 			flex-start
-		)
+		);
 		margin: 0 auto;
 	}
 }
@@ -73,7 +74,7 @@ body.page-id-21 .hero__img {
 		space-around,
 		flex-start,
 		flex-start
-	)
+	);
 	order: 2;
 	@include transition(all,0.3s,ease);
 	@media all and (min-width:$bp-3) {
@@ -83,7 +84,7 @@ body.page-id-21 .hero__img {
 		space-between,
 		center,
 		flex-start
-	)
+	);
 	}
 }
 
@@ -111,7 +112,7 @@ body.page-id-21 .hero__img {
 		flex-start,
 		flex-start,
 		flex-start
-	)
+	);
 	padding: $space-4x $space 0 $space;
 	@media all and (min-width:$bp-3) {
 		@include flex-p(
@@ -120,7 +121,7 @@ body.page-id-21 .hero__img {
 			flex-start,
 			flex-start,
 			flex-start
-		)
+		);
 	}
 }
 
@@ -176,7 +177,7 @@ body.page-id-21 .hero__img {
 			flex-start,
 			flex-start,
 			flex-start
-		)
+		);
 		max-width: 600px;
 		margin: 0 auto;
 	}
@@ -207,6 +208,8 @@ body.page-id-21 .hero__img {
 	}
 }
 
+#abt.mainCntnt { padding: $space $space 0 $space; }
+
 .caseStudies {
 	padding: $space;
 	@include flex-p(
@@ -215,7 +218,7 @@ body.page-id-21 .hero__img {
 		flex-start,
 		flex-start,
 		flex-start
-	)
+	);
 	@include transition(all,0.3s,ease);
 	@media all and (min-width:$bp-3) {
 		@include flex-p(
@@ -224,7 +227,7 @@ body.page-id-21 .hero__img {
 		space-between,
 		flex-start,
 		flex-start
-	)
+	);
 	}
 	@media all and (min-width:$bp-6) {
 		padding: $space 0;
@@ -259,7 +262,7 @@ body.page-id-21 .hero__img {
 		flex-start,
 		flex-start,
 		flex-start
-	)
+	);
 	@include transition(all,0.3s,ease);
 	@media all and (min-width:$bp-2) {
 		@include flex-p(
@@ -330,6 +333,70 @@ body.page-id-21 .hero__img {
 	margin: 0 $space $space 0 !important;
 }
 
+//* LOOOOOONG CONTENT PAGES
+//*===========================================
+
+#advan {
+	padding: $space-2x 0;
+}
+
+.advanCopy {
+	@media all and (min-width:$bp-3) {
+		column-count: 2;
+		column-gap: $space-3x;
+	}
+}
+
+.hrngCntr {
+	.bloc--33 {
+		background-color: $grey-3;
+		margin-bottom: $space;
+	}
+	@media all and (min-width:$bp-3) {
+		@include flex-p(
+			row,
+			wrap,
+			space-evenly,
+			stretch,
+			stretch
+		);
+		.bloc--33 { 
+			width: 30%;
+		}
+	}
+}
+
+.beneList {
+	@media all and (min-width:$bp-3) {
+		column-count: 3;
+		column-gap: $space-2x;
+	}
+}
+
+#comm {
+	margin-left: -1rem; 
+	width: calc(100% + 2rem);
+}
+
+.carCTAs {
+	@include flex-p(
+		column,
+		nowrap,
+		center, 
+		flex-start, 
+		flex-start,
+	);
+	@include transition(all, 0.3s, ease);
+	@media all and (min-width:$bp-1) {
+		@include flex-p(
+			row,
+			nowrap,
+			center,
+			flex-start,
+			flex-start,
+		);
+	}
+}
 
 //* NEWS
 //*===========================================
@@ -357,6 +424,10 @@ body.blog, body.single {
 		margin: $space-2x auto;
 		max-width: 800px;
 	}
+}
+
+.pagination {
+	margin: 0;
 }
 
 //*  HIDE IT

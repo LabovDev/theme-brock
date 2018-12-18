@@ -1,6 +1,11 @@
 //*  FORM ELEMENTS
 //*=========================================== 
 
+.wpcf7-form p {
+	color: $grey-1;
+	font-size: 80%; 
+}
+
 fieldset {}
 
 label {}
@@ -13,7 +18,8 @@ input[type="text"], input[type="tel"],
 input[type="email"], textarea {
   background-color: white;
   border: 1px solid $grey-3;
-  color: $grey-2;
+  color: $black;
+  padding: $space-qrtr $space-half;
   width: 100%;
 }
 
@@ -23,4 +29,18 @@ input[type="radio"] {}
 
 input[type="checkbox"] {}
 
-button, input[type="submit"] {}
+button, input[type="submit"] {
+	background-color: $color-3;
+  border: none; 
+  color: $white;
+  display: table;
+  font: 300 110%/1 $font-1;
+  margin: 0;
+  padding: $space;
+  text-align: left;
+  text-transform: uppercase;
+  @include transition(all,0.3s,ease);
+  &:hover {
+    background-color: $color-4;
+  }
+}

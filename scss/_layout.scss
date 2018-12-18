@@ -19,6 +19,26 @@ body, html {
 .clrfx { *zoom: 1; }
 
 
+//* HIDE STUFF ON LONG CONTENT TEMPLATE
+//*===========================================
+
+//* Hide all but ABOUT
+body.page-id-2262 {
+	#srv, #car, #exp, #cnt, #menuCar, #menuCntct { display: none; }
+}
+
+//* Hide all but CAREERS
+
+body.page-id-2290 {
+	#abt, #exp, #cnt, #menuAbt, #menuCntct { display: none; }
+}
+
+//* Hide all but CONTACT
+body.page-id-2264 {
+	#abt, #car, #exp, #menuAbt, #menuCar { display: none; }
+}
+
+
 //*  STRUCTURE
 //*=========================================== 
 
@@ -51,9 +71,105 @@ html, body {
 //*  BLOCKS
 //*===========================================
 
+.flexBloc {
+	@include flex-p(
+		column,
+		nowrap,
+		flex-start,
+		flex-start,
+		flex-start
+	);
+	margin: 0;
+	width: 100%;
+	@include transition(all,0.3s,ease);
+	@media all and (min-width:$bp-3) {
+		@include flex-p(
+	  	row,
+	  	wrap,
+	  	flex-start,
+	  	flex-start,
+	  	flex-start
+	  );
+	}
+}
+
+.flexBloc--comm {
+	@include flex-p(
+		column,
+		nowrap,
+		flex-start,
+		stretch,
+		flex-start
+	);
+	margin: 0;
+	width: 100%;
+	div { min-height: 300px; }
+	@include transition(all,0.3s,ease);
+	@media all and (min-width:$bp-3) {
+		@include flex-p(
+	  	row,
+	  	wrap,
+	  	flex-start,
+	  	stretch,
+	  	flex-start
+	  );
+	}
+}
+
+.colorBloc {
+	background-color: $color-5;
+	padding: $space;
+	margin-left: -1rem;
+	width: calc(100% + 2rem);
+}
+
 .bloc {
 	padding: $space;
 	margin: 0;
+	width: 100%;
+}
+
+.bloc--50 {
+	width: 100%;
+	@include transition(all,0.3s,ease);
+	@media all and (min-width:$bp-3) {
+		padding: $space;
+		width: 50%;
+	}
+}
+
+.bloc--70 {
+	width: 100%;
+	@include transition(all,0.3s,ease);
+	@media all and (min-width:$bp-3) {
+		padding: $space;
+		width: 70%;
+	}
+}
+
+.bloc--33 {
+	width: 100%;
+	@include transition(all,0.3s,ease);
+	@media all and (min-width:$bp-3) {
+		width: 33.333333%;
+	}
+}
+
+.bloc--30 {
+	width: 100%;
+	@include transition(all,0.3s,ease);
+	@media all and (min-width:$bp-3) {
+		padding: $space;
+		width: 30%;
+	}
+}
+
+.bloc--25 {
+	width: 100%;
+	@include transition(all,0.3s,ease);
+	@media all and (min-width:$bp-3) {
+		width: 25%;	
+	}
 }
 
 .embed-block {

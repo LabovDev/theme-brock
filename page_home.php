@@ -96,17 +96,20 @@ get_header(); ?>
 		</div>
 		<?php endif; ?>
 	</section> <!-- END .srvcs -->
-	
+
 	<section class="bloc bloc__news">
 		<div class="bloc__newsWrap">
 			<h1 class="hdln hdln--news">News</h1>
 			<div class="bloc__newsXcrpt">
-				<h1><a href="http://www.brockgroup.com/news/raymond-a-aronoff-named-president-and-ceo-of-the-brock-group/">Raymond A. Aronoff Named President and CEO of The Brock Group</a></h1>
-				<p>The Brock Group announced today that Raymond A. Aronoff has joined the company as President and Chief Executive Officer.</p>
-				<a class="bttn bttn--blue bttn--news" href="http://www.brockgroup.com/news/raymond-a-aronoff-named-president-and-ceo-of-the-brock-group/">Read</a>
+				<?php $the_query = new WP_Query( 'posts_per_page=1' ); ?>
+				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+					<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+					<p><?php the_excerpt(__('(more…)')); ?></p>
+					<a class="bttn bttn--blue bttn--news" href="<?php the_permalink() ?>">Read</a>
+				<?php endwhile; wp_reset_postdata(); ?>
 			</div> <!-- END .newsXcrpt -->
-		</div> <!-- END .bloc__newsWrap -->		
-	</section> <!-- END .newsIntro -->
+		</div> <!-- END .bloc__newsWrap -->
+	</section>
 	
 </div> <!-- END .wrap -->
 

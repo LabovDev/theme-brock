@@ -230,3 +230,36 @@
 		}
 	}
 }
+
+//* Long Content Sub-Menu
+//*===========================================
+
+.subMenu {
+  background-color: $color-3;
+  text-align: center;
+}
+
+.subMenu__item {
+  background-color: $color-3;
+  display: inline-block;
+  font: normal normal 70%/1 $font-1;
+  list-style-type: none;
+  padding: $space $space-qrtr;
+  @include transition(all, 0.3s, ease);
+  &:hover {
+    background-color: $color-4;
+  }
+  @media all and (min-width:$bp-1) {
+    font-size: 80%;
+    padding: $space;
+  }
+  @media all and (min-width:$bp-3) {
+    font-size: 100%;
+  }
+}
+
+.subMenu__link {
+  color: $white;
+  @include transition(all, 0.3s, ease);
+  &:hover { color: $white; }  
+}

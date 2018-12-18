@@ -21,43 +21,156 @@ body, html {
 .clrfx {
   *zoom: 1; }
 
-/* line 25, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+/* line 27, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+body.page-id-2262 #srv, body.page-id-2262 #car, body.page-id-2262 #exp, body.page-id-2262 #cnt, body.page-id-2262 #menuCar, body.page-id-2262 #menuCntct {
+  display: none; }
+
+/* line 33, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+body.page-id-2290 #abt, body.page-id-2290 #exp, body.page-id-2290 #cnt, body.page-id-2290 #menuAbt, body.page-id-2290 #menuCntct {
+  display: none; }
+
+/* line 38, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+body.page-id-2264 #abt, body.page-id-2264 #car, body.page-id-2264 #exp, body.page-id-2264 #menuAbt, body.page-id-2264 #menuCar {
+  display: none; }
+
+/* line 45, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
 html, body {
   height: 100%;
   width: 100%; }
 
-/* line 30, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+/* line 50, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
 .wrap {
   margin: 0 auto;
   padding: 0;
   width: 100%; }
 
 @media all and (min-width: 68.75em) {
-  /* line 37, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+  /* line 57, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
   .wrap--mxw {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0; } }
 
-/* line 44, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+/* line 64, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
 .content {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0; }
 
-/* line 54, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+/* line 74, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+.flexBloc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 0;
+  width: 100%;
+  transition: all, 0.3s, ease; }
+  @media all and (min-width: 45em) {
+    /* line 74, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+    .flexBloc {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start; } }
+
+/* line 96, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+.flexBloc--comm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  margin: 0;
+  width: 100%;
+  transition: all, 0.3s, ease; }
+  /* line 106, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+  .flexBloc--comm div {
+    min-height: 300px; }
+  @media all and (min-width: 45em) {
+    /* line 96, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+    .flexBloc--comm {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      align-content: flex-start; } }
+
+/* line 119, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+.colorBloc {
+  background-color: #141C4D;
+  padding: 1rem;
+  margin-left: -1rem;
+  width: calc(100% + 2rem); }
+
+/* line 126, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
 .bloc {
   padding: 1rem;
-  margin: 0; }
+  margin: 0;
+  width: 100%; }
 
-/* line 59, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+/* line 132, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+.bloc--50 {
+  width: 100%;
+  transition: all, 0.3s, ease; }
+  @media all and (min-width: 45em) {
+    /* line 132, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+    .bloc--50 {
+      padding: 1rem;
+      width: 50%; } }
+
+/* line 141, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+.bloc--70 {
+  width: 100%;
+  transition: all, 0.3s, ease; }
+  @media all and (min-width: 45em) {
+    /* line 141, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+    .bloc--70 {
+      padding: 1rem;
+      width: 70%; } }
+
+/* line 150, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+.bloc--33 {
+  width: 100%;
+  transition: all, 0.3s, ease; }
+  @media all and (min-width: 45em) {
+    /* line 150, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+    .bloc--33 {
+      width: 33.333333%; } }
+
+/* line 158, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+.bloc--30 {
+  width: 100%;
+  transition: all, 0.3s, ease; }
+  @media all and (min-width: 45em) {
+    /* line 158, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+    .bloc--30 {
+      padding: 1rem;
+      width: 30%; } }
+
+/* line 167, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+.bloc--25 {
+  width: 100%;
+  transition: all, 0.3s, ease; }
+  @media all and (min-width: 45em) {
+    /* line 167, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+    .bloc--25 {
+      width: 25%; } }
+
+/* line 175, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
 .embed-block {
   position: relative;
   padding-bottom: 56.25%;
   overflow: hidden;
   max-width: 100%;
   height: auto; }
-  /* line 65, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
+  /* line 181, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_layout.scss */
   .embed-block iframe {
     position: absolute;
     top: 0;
@@ -94,9 +207,10 @@ img.alignright {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-position: right top;
+  background-position: center top;
   background-size: cover;
-  height: 45vh;
+  background-repeat: no-repeat;
+  height: 25vh;
   width: 100%;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 45em) {
@@ -104,17 +218,17 @@ img.alignright {
     .hero__img {
       height: 55vh; } }
 
-/* line 50, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 51, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 body.page-id-21 .hero__img {
   background-position: center top; }
 
-/* line 53, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 54, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .bloc--about {
   background-color: #E9E9E9;
   padding: 0;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 40.625em) {
-    /* line 53, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 54, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .bloc--about {
       display: flex;
       flex-direction: row;
@@ -124,7 +238,7 @@ body.page-id-21 .hero__img {
       align-content: flex-start;
       margin: 0 auto; } }
 
-/* line 69, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 70, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .wrap--toCols {
   display: flex;
   flex-direction: row;
@@ -135,7 +249,7 @@ body.page-id-21 .hero__img {
   order: 2;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 45em) {
-    /* line 69, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 70, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .wrap--toCols {
       display: flex;
       flex-direction: row;
@@ -144,24 +258,24 @@ body.page-id-21 .hero__img {
       align-items: center;
       align-content: flex-start; } }
 
-/* line 90, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 91, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .bloc--join {
   flex-basis: 100%;
   margin: 2rem 1rem 0 1rem;
   padding: 0; }
   @media all and (min-width: 40.625em) {
-    /* line 90, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 91, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .bloc--join {
       flex-basis: 44%;
       margin: 2rem 1rem; } }
 
-/* line 100, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 101, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .bloc--urgent {
   background: #ffffff url("../images/job-alert-bckgrnd.png") top center/28px repeat-x;
   margin: 2rem 0.5rem 2rem 0.5rem;
   padding: 1rem; }
 
-/* line 106, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 107, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .bloc--srvcs, .bloc--prdcts,
 .bloc--xprncs, .bloc--bis {
   display: flex;
@@ -172,7 +286,7 @@ body.page-id-21 .hero__img {
   align-content: flex-start;
   padding: 4rem 1rem 0 1rem; }
   @media all and (min-width: 45em) {
-    /* line 106, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 107, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .bloc--srvcs, .bloc--prdcts,
     .bloc--xprncs, .bloc--bis {
       display: flex;
@@ -182,61 +296,61 @@ body.page-id-21 .hero__img {
       align-items: flex-start;
       align-content: flex-start; } }
 
-/* line 127, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 128, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .bloc--bis {
   padding: 4rem 1rem; }
 
-/* line 131, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 132, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .bloc__hdln {
   flex-basis: 100%;
   width: 100%; }
 
-/* line 136, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 137, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .bloc__img {
   transition: all, 0.3s, ease; }
   @media all and (min-width: 45em) {
-    /* line 136, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 137, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .bloc__img {
       flex-basis: 48%; } }
 
-/* line 143, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 144, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .bloc__txt {
   transition: all, 0.3s, ease; }
   @media all and (min-width: 45em) {
-    /* line 143, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 144, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .bloc__txt {
       flex-basis: 48%; } }
 
-/* line 150, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 151, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .bloc--prdcts .wrap--toCols .bloc__img,
 .bloc--bis .wrap--toCols .bloc__img {
   transition: all, 0.3s, ease; }
   @media all and (min-width: 45em) {
-    /* line 150, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 151, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .bloc--prdcts .wrap--toCols .bloc__img,
     .bloc--bis .wrap--toCols .bloc__img {
       order: 3; } }
 
-/* line 158, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 159, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .bloc--prdcts .wrap--toCols .bloc__txt,
 .bloc--bis .wrap--toCols .bloc__txt {
   transition: all, 0.3s, ease; }
   @media all and (min-width: 45em) {
-    /* line 158, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 159, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .bloc--prdcts .wrap--toCols .bloc__txt,
     .bloc--bis .wrap--toCols .bloc__txt {
       order: 2; } }
 
-/* line 166, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 167, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .bloc__news {
   background-color: #E9E9E9;
   padding: 1rem; }
 
-/* line 170, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 171, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .bloc__newsWrap {
   transition: all, 0.3s, ease; }
   @media all and (min-width: 40.625em) {
-    /* line 170, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 171, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .bloc__newsWrap {
       display: flex;
       flex-direction: row;
@@ -247,30 +361,34 @@ body.page-id-21 .hero__img {
       max-width: 600px;
       margin: 0 auto; } }
 
-/* line 185, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 186, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .bloc__newsXcrpt {
   margin-bottom: 3rem;
   max-width: 800px;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 40.625em) {
-    /* line 185, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 186, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .bloc__newsXcrpt {
       flex-basis: 60%;
       flex-grow: 1;
       margin: 2rem auto 3rem auto; } }
 
-/* line 200, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 201, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .mainCntnt {
   padding: 1rem;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 68.75em) {
-    /* line 200, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 201, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .mainCntnt {
       margin: 0 auto;
       max-width: 1000px;
       padding: 1rem 0; } }
 
-/* line 210, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 211, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+#abt.mainCntnt {
+  padding: 1rem 1rem 0 1rem; }
+
+/* line 213, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .caseStudies {
   padding: 1rem;
   display: flex;
@@ -281,7 +399,7 @@ body.page-id-21 .hero__img {
   align-content: flex-start;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 45em) {
-    /* line 210, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 213, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .caseStudies {
       display: flex;
       flex-direction: row;
@@ -290,32 +408,32 @@ body.page-id-21 .hero__img {
       align-items: flex-start;
       align-content: flex-start; } }
   @media all and (min-width: 68.75em) {
-    /* line 210, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 213, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .caseStudies {
       padding: 1rem 0; } }
 
-/* line 234, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 237, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .caseStudy {
   margin: 2rem 0 4rem 0;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 45em) {
-    /* line 234, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 237, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .caseStudy {
       flex-basis: 48%; } }
 
-/* line 242, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 245, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .leader-list {
   border-top: 1px solid #E9E9E9; }
 
-/* line 243, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 246, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .leader-list-last {
   border-bottom: none; }
 
-/* line 249, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 252, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .wrap--brckFtr {
   background-color: #141C4D; }
 
-/* line 253, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 256, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .brckFtr {
   padding: 2rem 1rem;
   display: flex;
@@ -326,7 +444,7 @@ body.page-id-21 .hero__img {
   align-content: flex-start;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 40.625em) {
-    /* line 253, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    /* line 256, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
     .brckFtr {
       display: flex;
       flex-direction: row;
@@ -336,85 +454,151 @@ body.page-id-21 .hero__img {
       align-content: flex-start;
       margin: 0 auto;
       max-width: 1000px; } }
-  /* line 275, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+  /* line 278, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
   .brckFtr div {
     flex-basis: 100%;
     transition: all, 0.3s, ease; }
     @media all and (min-width: 40.625em) {
-      /* line 275, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+      /* line 278, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
       .brckFtr div {
         flex-basis: 48%; }
-        /* line 280, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+        /* line 283, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
         .brckFtr div:nth-child(3) {
           flex-basis: 100%; } }
     @media all and (min-width: 52.5em) {
-      /* line 275, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+      /* line 278, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
       .brckFtr div {
         flex-basis: 32%;
         max-width: 400px; }
-        /* line 286, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+        /* line 289, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
         .brckFtr div:nth-child(3) {
           flex-basis: 32%;
           margin-top: 23px; } }
 
-/* line 297, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 300, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .office-locations {
   background-color: transparent; }
 
-/* line 301, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 304, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .panel-primary {
   background-color: #E9E9E9;
   border: none;
   box-shadow: none !important;
   min-height: 290px; }
 
-/* line 309, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 312, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .brckFtr__sctLinks {
   float: left;
   margin: 0.5rem 0 1rem 0;
   width: 50%; }
 
-/* line 315, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 318, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .brckFtr__socLinks {
   margin: 0.5rem 0 2rem 0;
   width: 100%; }
 
-/* line 320, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 323, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .brckFtr__legal {
   border-top: 1px solid #0173D0; }
 
-/* line 324, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 327, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .ajax-loader {
   height: 16px;
   width: 16px; }
 
-/* line 329, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 332, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 .wp-caption.alignleft {
   margin: 0 1rem 1rem 0 !important; }
 
-/* line 337, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 339, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+#advan {
+  padding: 2rem 0; }
+
+@media all and (min-width: 45em) {
+  /* line 343, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+  .advanCopy {
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem; } }
+
+/* line 351, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+.hrngCntr .bloc--33 {
+  background-color: #E9E9E9;
+  margin-bottom: 1rem; }
+
+@media all and (min-width: 45em) {
+  /* line 350, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+  .hrngCntr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: stretch; }
+    /* line 363, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    .hrngCntr .bloc--33 {
+      width: 30%; } }
+
+@media all and (min-width: 45em) {
+  /* line 369, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+  .beneList {
+    -webkit-column-count: 3;
+            column-count: 3;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem; } }
+
+/* line 376, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+#comm {
+  margin-left: -1rem;
+  width: calc(100% + 2rem); }
+
+/* line 381, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+.carCTAs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  transition: all, 0.3s, ease; }
+  @media all and (min-width: 33.75em) {
+    /* line 381, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+    .carCTAs {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: flex-start; } }
+
+/* line 404, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 article.post {
   border-bottom: 1px solid #E9E9E9;
   margin-bottom: 1rem; }
-  /* line 340, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+  /* line 407, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
   article.post .entry-meta {
     margin-bottom: 0.5rem; }
-  /* line 343, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+  /* line 410, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
   article.post .entry-content {
     transition: all, 0.3s, ease; }
     @media all and (min-width: 33.75em) {
-      /* line 346, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+      /* line 413, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
       article.post .entry-content img {
         float: left;
         margin: 0 1rem 1rem 0;
         width: 50%; } }
 
-/* line 356, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 423, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 body.blog .mainCntnt, body.single .mainCntnt {
   margin: 2rem auto;
   max-width: 800px; }
 
-/* line 365, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+/* line 429, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
+.pagination {
+  margin: 0; }
+
+/* line 436, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_content.scss */
 section[data-attr='hide'] {
   display: none;
   height: 0;
@@ -486,30 +670,76 @@ a.bttn--blue {
 /* line 67, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 a.bttn--working {
   background-color: #0173D0;
-  display: inline-block;
-  margin-right: 2rem;
-  text-align: left;
+  display: block;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  width: 100%;
   transition: all, 0.3s, ease; }
-  /* line 73, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+  /* line 74, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
   a.bttn--working:hover {
     background-color: #038EFF;
     color: #ffffff;
     -webkit-transform: scale(1.05);
             transform: scale(1.05); }
+  @media all and (min-width: 33.75em) {
+    /* line 67, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    a.bttn--working {
+      margin: 0 0.5rem 1rem 0.5rem;
+      max-width: 230px;
+      width: 46%; } }
 
-/* line 80, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 86, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 a.bttn--news {
   margin: 0; }
 
-/* line 87, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 94, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+.mainCntnt h2, .mainCntnt h3, .mainCntnt h4, .mainCntnt h5, .mainCntnt h6 {
+  font-family: "Oswald", helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: #333333; }
+
+/* line 103, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .hdln {
   color: #000000;
-  font-family: "Oswald", helvetica, sans-serif;
-  font-size: 150%;
-  font-weight: 600;
-  line-height: 1; }
+  font: 600 normal 150%/1 "Oswald", helvetica, sans-serif;
+  text-transform: uppercase; }
 
-/* line 95, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 109, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+.hdln--h2 {
+  border-bottom: 6px solid #B7B7B7;
+  font-size: 200%;
+  padding-bottom: 0.25rem;
+  transition: all, 0.3s, ease; }
+  @media all and (min-width: 68.75em) {
+    /* line 109, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    .hdln--h2 {
+      margin: 2rem auto 0 auto;
+      max-width: 1000px; } }
+
+/* line 120, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+.hdln--h3, .hdln--h4,
+.hdln--h5, .hdln--h6 {
+  border-bottom: 4px solid #B7B7B7;
+  font-size: 130% !important;
+  padding-bottom: 0.25rem; }
+
+/* line 127, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+.hdln--sBar {
+  font-size: 120% !important;
+  font-weight: 300 !important;
+  color: #0173D0 !important;
+  line-height: 1.2;
+  margin-bottom: 1rem !important;
+  text-transform: none !important; }
+
+/* line 136, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+.hdln--rev {
+  border-color: #ffffff;
+  color: #ffffff !important; }
+
+/* line 141, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .hdln--hero {
   color: #ffffff;
   font-size: 260%;
@@ -518,11 +748,11 @@ a.bttn--news {
   text-transform: uppercase;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 45em) {
-    /* line 95, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 141, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .hdln--hero {
       font-size: 360%; } }
 
-/* line 107, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 153, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .hdln--join {
   color: #000000;
   padding: 0 0 1rem 0;
@@ -533,13 +763,13 @@ a.bttn--news {
   flex-basis: 100%;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 40.625em) {
-    /* line 107, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 153, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .hdln--join {
       font-size: 250%;
       padding: 0 0 1.5rem 0;
       text-align: left; } }
 
-/* line 123, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 169, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .hdln--ndxSctn {
   border-bottom: 6px solid #C10000;
   font-size: 180%;
@@ -549,22 +779,22 @@ a.bttn--news {
   text-transform: uppercase;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 45em) {
-    /* line 123, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 169, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .hdln--ndxSctn {
       font-size: 210%; } }
 
-/* line 136, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 182, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .hdln--news {
   margin: 0 0 0.5rem 0;
   text-transform: uppercase;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 40.625em) {
-    /* line 136, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 182, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .hdln--news {
       font-size: 300%;
       margin: 2rem 1rem 0 0; } }
 
-/* line 146, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 192, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .hdln--intHero {
   border-bottom: 6px solid #B7B7B7;
   font-size: 200%;
@@ -573,12 +803,15 @@ a.bttn--news {
   padding-bottom: 0.25rem;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 68.75em) {
-    /* line 146, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 192, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .hdln--intHero {
       margin: 2rem auto 0 auto;
       max-width: 1000px; } }
+  /* line 203, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+  .hdln--intHero:empty {
+    display: none; }
 
-/* line 159, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 206, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .hdln--intSubHdln {
   border-bottom: 6px solid #B7B7B7;
   color: #333333;
@@ -588,20 +821,20 @@ a.bttn--news {
   text-transform: uppercase;
   width: 100%; }
 
-/* line 169, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 216, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .hdln--csStd {
   margin-bottom: 1rem;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 45em) {
-    /* line 169, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 216, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .hdln--csStd {
       font-size: 100%; } }
   @media all and (min-width: 52.5em) {
-    /* line 169, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 216, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .hdln--csStd {
       font-size: 115%; } }
 
-/* line 180, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 227, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .hdln--ftr {
   border-bottom: 1px solid #0173D0;
   color: #0173D0;
@@ -610,14 +843,35 @@ a.bttn--news {
   line-height: 1.4;
   text-transform: uppercase; }
 
-/* line 193, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 236, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+.screen-reader-text {
+  color: #B7B7B7;
+  font-size: 60%; }
+
+/* line 241, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+.page-numbers {
+  background-color: #E9E9E9;
+  border: 1px solid #B7B7B7;
+  border-radius: 4px;
+  color: #333333;
+  font: normal normal 80%/1 "Bitter", "Times", serif;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem; }
+  /* line 250, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+  .page-numbers:first-child {
+    margin: 0.25rem 0.25rem 0.25rem 0; }
+  /* line 254, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+  .page-numbers:hover {
+    background-color: #333333;
+    color: #E9E9E9; }
+
+/* line 264, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .txt {
   color: #000000;
-  font-family: "Bitter", "Times", serif;
-  font-size: 100%;
-  font-weight: 400; }
+  font-family: normal normal 90%/1.6 "Bitter", "Times", serif; }
 
-/* line 200, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 270, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .txt--hero {
   color: #ffffff;
   font-size: 110%;
@@ -629,11 +883,11 @@ a.bttn--news {
   text-shadow: 0 0 12px rgba(0, 0, 0, 0.75);
   transition: all, 0.3s, ease; }
   @media all and (min-width: 45em) {
-    /* line 200, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 270, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .txt--hero {
       font-size: 130%; } }
 
-/* line 215, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 285, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .txt--join {
   color: #000000;
   line-height: 1.3;
@@ -641,88 +895,104 @@ a.bttn--news {
   text-align: center;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 40.625em) {
-    /* line 215, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 285, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .txt--join {
       font-size: 120%;
       text-align: left; } }
-  @media all and (min-width: 58.75em) {
-    /* line 215, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
-    .txt--join {
-      /*
-		font-size: 140%;
-		line-height: 1.6;
-*/ } }
 
-/* line 233, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 297, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .txt--hiring {
   font-size: 100%;
   font-weight: 700;
   margin-bottom: 2rem; }
 
-/* line 239, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 303, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .txt--ndxSctn {
   color: #333333;
   font-size: 90%;
   margin: 1rem 0;
   transition: all, 0.3s, ease; }
   @media all and (min-width: 40.625em) {
-    /* line 239, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 303, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .txt--ndxSctn {
       font-size: 100%;
       line-height: 2; } }
   @media all and (min-width: 45em) {
-    /* line 239, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 303, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .txt--ndxSctn {
       margin: 0 0 1rem 0; } }
   @media all and (min-width: 58.75em) {
-    /* line 239, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 303, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .txt--ndxSctn {
       font-size: 105%; } }
 
-/* line 257, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
-.mainCntnt h2, .mainCntnt h3, .mainCntnt h4, .mainCntnt h5, .mainCntnt h6 {
-  font-family: "Oswald", helvetica, sans-serif;
-  font-weight: bold;
-  margin-bottom: 0.25rem;
-  text-transform: uppercase;
-  color: #333333; }
-
-/* line 264, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 321, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .mainCntnt p, .mainCntnt li {
   font-family: "Bitter", "Times", serif;
   font-size: 90%;
   line-height: 1.6;
   margin-bottom: 1rem; }
 
-/* line 270, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 327, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .mainCntnt li {
   margin-left: 16px; }
 
-/* line 275, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 333, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+.colorBloc p, .colorBloc li {
+  color: #ffffff; }
+
+/* line 336, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+.beneList li {
+  line-height: 1.3;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column; }
+
+/* line 344, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+.hrngCntr__loc li {
+  list-style-type: none;
+  line-height: 1.2;
+  margin: 0 0 0.5rem 0; }
+
+/* line 351, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+.hrngCntr__item {
+  margin: 0; }
+
+/* line 353, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+.hrngCntr__item--hdr {
+  color: #141C4D;
+  font: 600 normal 120%/1 "Oswald", helvetica, sans-serif !important;
+  text-transform: uppercase; }
+
+/* line 359, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+.hrngCntr__item--note {
+  font-size: 65% !important; }
+
+/* line 369, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .txt--jobTitle {
   font-size: 80% !important; }
 
-/* line 279, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 373, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .txt--csStd {
   font-size: 90%;
   line-height: 1.6;
   margin: 1rem 0; }
 
-/* line 285, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 379, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .txt--ftrSctLnk {
   font-size: 90%;
   line-height: 2;
   list-style-type: none; }
-  /* line 289, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+  /* line 383, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
   .txt--ftrSctLnk a {
     color: #ffffff;
     border-bottom: 1px solid transparent;
     transition: all, 0.3s, ease; }
-    /* line 293, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 387, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .txt--ftrSctLnk a:hover {
       border-bottom: 1px solid #ffffff; }
 
-/* line 299, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 393, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .txt--socLnk {
   display: block;
   font-size: 76%;
@@ -730,29 +1000,29 @@ a.bttn--news {
   list-style-type: none;
   padding-left: 40px;
   width: 100%; }
-  /* line 306, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+  /* line 400, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
   .txt--socLnk a {
     border-bottom: 1px solid transparent;
     color: #ffffff;
     transition: all, 0.3s, ease; }
-    /* line 310, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 404, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .txt--socLnk a:hover {
       color: #ffffff;
       border-bottom: 1px solid #ffffff; }
 
-/* line 317, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 411, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .txt--socLnkLi {
   background: url("../images/icon_li.png") 0 3px/24px no-repeat; }
 
-/* line 321, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 415, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .txt--socLnkFb {
   background: url("../images/icon_fb.png") 0 3px/24px no-repeat; }
 
-/* line 325, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 419, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .txt--socLnkTw {
   background: url("../images/icon_tw.png") 0 6px/24px no-repeat; }
 
-/* line 329, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 423, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .txt--legal {
   margin-top: 1rem;
   color: #B7B7B7;
@@ -761,27 +1031,27 @@ a.bttn--news {
   font-weight: 300;
   text-align: center;
   transition: all, 0.3s, ease; }
-  /* line 336, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+  /* line 430, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
   .txt--legal a {
     color: #ffffff;
     text-decoration: underline !important; }
-    /* line 339, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 433, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .txt--legal a:hover {
       color: #ffffff; }
   @media all and (min-width: 52.5em) {
-    /* line 329, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 423, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     .txt--legal {
       font-size: 65%;
       text-align: left; } }
 
-/* line 350, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 444, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 p.wp-caption-text {
   font-size: .8rem !important;
   font-style: normal !important;
   line-height: 1.2 !important;
   margin-top: 0.5rem !important; }
 
-/* line 361, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 455, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .prdct__blocHdr {
   color: #ffffff;
   font: 600 normal 150%/1 "Oswald", helvetica, sans-serif;
@@ -790,45 +1060,50 @@ p.wp-caption-text {
   text-shadow: 0 0 12px rgba(0, 0, 0, 0.75);
   text-transform: uppercase; }
 
-/* line 370, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 464, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .prdcts__desc {
   font: 400 normal 90%/1.6 "Bitter", "Times", serif; }
 
-/* line 374, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 468, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 h1.ndx__sctHdr--news {
   transition: all, 0.3s, ease; }
   @media all and (min-width: 40.625em) {
-    /* line 374, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+    /* line 468, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
     h1.ndx__sctHdr--news {
       flex-basis: 20%;
       flex-shrink: 1; } }
 
-/* line 383, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 477, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .bloc__newsXcrpt h1 {
   font: 600 normal 110%/1 "Oswald", helvetica, sans-serif; }
-  /* line 385, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+  /* line 479, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
   .bloc__newsXcrpt h1 a {
     color: #333333; }
 
-/* line 389, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 483, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .bloc__newsXcrpt p {
   font: 400 normal 90%/1.4 "Bitter", "Times", serif;
   margin: 0.5rem 0 1rem 0; }
 
-/* line 399, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 493, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .entry-title {
-  font: normal normal 200%/1 "Oswald", helvetica, sans-serif;
-  margin-bottom: 0.5rem; }
-  /* line 402, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+  font: bold normal 200%/1 "Oswald", helvetica, sans-serif;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase; }
+  /* line 497, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
   .entry-title a {
     color: #0173D0; }
 
-/* line 405, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 500, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .entry-meta {
+  border-top: 1px solid #E9E9E9;
+  font: normal normal 200%/1 "Oswald", helvetica, sans-serif;
   color: #B7B7B7;
-  font-size: 76%; }
+  font-size: 76%;
+  margin-top: 1em;
+  padding-top: .5em; }
 
-/* line 411, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
+/* line 510, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_type_links.scss */
 .author a {
   color: #B7B7B7; }
 
@@ -1141,11 +1416,67 @@ h1.ndx__sctHdr--news {
     .serv_menu li {
       font: normal normal 100%/1 "Oswald", helvetica, sans-serif; } }
 
-/* line 12, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_forms.scss */
+/* line 237, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_nav.scss */
+.subMenu {
+  background-color: #0173D0;
+  text-align: center; }
+
+/* line 242, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_nav.scss */
+.subMenu__item {
+  background-color: #0173D0;
+  display: inline-block;
+  font: normal normal 70%/1 "Oswald", helvetica, sans-serif;
+  list-style-type: none;
+  padding: 1rem 0.25rem;
+  transition: all, 0.3s, ease; }
+  /* line 249, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_nav.scss */
+  .subMenu__item:hover {
+    background-color: #038EFF; }
+  @media all and (min-width: 33.75em) {
+    /* line 242, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_nav.scss */
+    .subMenu__item {
+      font-size: 80%;
+      padding: 1rem; } }
+  @media all and (min-width: 45em) {
+    /* line 242, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_nav.scss */
+    .subMenu__item {
+      font-size: 100%; } }
+
+/* line 261, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_nav.scss */
+.subMenu__link {
+  color: #ffffff;
+  transition: all, 0.3s, ease; }
+  /* line 264, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_nav.scss */
+  .subMenu__link:hover {
+    color: #ffffff; }
+
+/* line 4, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_forms.scss */
+.wpcf7-form p {
+  color: #333333;
+  font-size: 80%; }
+
+/* line 17, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_forms.scss */
 input[type="text"], input[type="tel"],
 input[type="email"], textarea {
   background-color: white;
   border: 1px solid #E9E9E9;
-  color: #B7B7B7;
+  color: #000000;
+  padding: 0.25rem 0.5rem;
   width: 100%; }
+
+/* line 32, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_forms.scss */
+button, input[type="submit"] {
+  background-color: #0173D0;
+  border: none;
+  color: #ffffff;
+  display: table;
+  font: 300 110%/1 "Oswald", helvetica, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+  transition: all, 0.3s, ease; }
+  /* line 43, Users/jtuck/Sites/brock/wp-content/themes/theme-brock/scss/_forms.scss */
+  button:hover, input[type="submit"]:hover {
+    background-color: #038EFF; }
 /*# sourceMappingURL=styles.css.map */
