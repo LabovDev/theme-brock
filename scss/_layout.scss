@@ -24,18 +24,27 @@ body, html {
 
 //* Hide all but ABOUT
 body.page-id-2262 {
-	#srv, #car, #exp, #cnt, #menuCar, #menuCntct { display: none; }
+	#car, #exper, #cnt, 
+	#menuCar, #menuExp, #menuCntct { display: none; }
 }
 
 //* Hide all but CAREERS
 
 body.page-id-2290 {
-	#abt, #exp, #cnt, #menuAbt, #menuCntct { display: none; }
+	#abt, #exper, #cnt, 
+	#menuAbt, #menuExp, #menuCntct { display: none; }
 }
 
 //* Hide all but CONTACT
 body.page-id-2264 {
-	#abt, #car, #exp, #menuAbt, #menuCar { display: none; }
+	#abt, #car, #exper, 
+	#menuAbt, #menuExp, #menuCar { display: none; }
+}
+
+//* Hide all but EXPERIENCES
+body.page-id-2299 {
+	#abt, #car, #cnt, 
+	#menuAbt, #menuCar, #menuCntct { display: none; }
 }
 
 
@@ -93,7 +102,7 @@ html, body {
 	}
 }
 
-.flexBloc--comm {
+.flexBloc--img {
 	@include flex-p(
 		column,
 		nowrap,
@@ -116,11 +125,37 @@ html, body {
 	}
 }
 
-.colorBloc {
+.flexBloc--cs {
+	@include flex-p(
+		column,
+		nowrap,
+		flex-start,
+		flex-start,
+		flex-start
+	);
+	margin: 0;
+	width: 100%;
+	@include transition(all,0.3s,ease);
+	@media all and (min-width:$bp-3) {
+		@include flex-p(
+	  	row,
+	  	wrap,
+	  	space-between,
+	  	stretch,
+	  	flex-start
+	  );
+	}
+}
+
+.bloc--clr {
 	background-color: $color-5;
-	padding: $space;
-	margin-left: -1rem;
+	padding: $space-2x;
 	width: calc(100% + 2rem);
+	margin-left: -1rem;
+	@include transition(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		padding: 0;
+	}
 }
 
 .bloc {
@@ -169,6 +204,24 @@ html, body {
 	@include transition(all,0.3s,ease);
 	@media all and (min-width:$bp-3) {
 		width: 25%;	
+	}
+}
+
+.bloc--txt {
+	padding: $space-2x 0;
+	@include transition(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		padding: $space-3x $space;
+	}
+}
+
+.bloc--cs {
+	border-bottom: 1px solid $grey-3;
+	margin-bottom: $space-2x;
+	padding: 0 0 $space 0;
+	@include transition(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		width: 48%;
 	}
 }
 

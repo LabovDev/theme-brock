@@ -28,24 +28,24 @@ get_header(); ?>
 		</div>
 	</div> <!-- END Advantages -->
 
-	<div id="vision" class="flexBloc colorBloc">
-		<div class="bloc bloc--33">
+	<div id="vision" class="flexBloc bloc--clr">
+		<div class="bloc bloc--33 bloc--txt">
 			<h3 class="hdln--h3 hdln--rev">Vison</h3>
 			<?php the_field('lc_abt_vis'); ?>
 		</div>
-		<div class="bloc bloc--33">
+		<div class="bloc bloc--33 bloc--txt">
 			<h3 class="hdln--h3 hdln--rev">Misson</h3>
 			<?php the_field('lc_abt_mis'); ?>
 		</div>
-		<div class="bloc bloc--33">
+		<div class="bloc bloc--33 bloc--txt">
 			<h3 class="hdln--h3 hdln--rev">Values</h3>
 			<?php the_field('lc_abt_val'); ?>
 		</div>
 	</div> <!-- END Vision, Mission, & Values -->
 
-	<div id="comm" class="flexBloc flexBloc--comm">
+	<div id="comm" class="flexBloc flexBloc--img">
 		<div class="bloc bloc--50" style="background: url('<?php the_field('lc_abt_comi'); ?>') center center/cover no-repeat;"></div>
-		<div class="bloc bloc--50">
+		<div class="bloc bloc--50 bloc--txt">
 			<h4 class="hdln--h4">Community</h4>
 			<p class="txt txt--body"><?php the_field('lc_abt_comt'); ?></p>
 		</div>
@@ -57,7 +57,7 @@ get_header(); ?>
 	<li class="subMenu__item"><a href="#working" class="subMenu__link">Working At Brock</a></li>
 	<li class="subMenu__item"><a href="#benefits" class="subMenu__link">Benefits</a></li>
 	<li class="subMenu__item"><a href="#hiring" class="subMenu__link">Hiring Centers</a></li>
-</ul> <!-- END sub-menu -->
+</ul> <!-- END Career sub-menu -->
 
 <section id="car" class="wrap wrap--mxw mainCntnt">
 
@@ -74,8 +74,8 @@ get_header(); ?>
 		</div>
 	</div> <!-- END Working At Brock -->
 
-	<div id="benefits" class="flexBloc colorBloc">
-		<div class="bloc">
+	<div id="benefits" class="flexBloc bloc--clr">
+		<div class="bloc bloc--txt">
 			<h3 class="hdln--h3 hdln--rev">Benefits</h3>
 			<?php the_field('lc_car_bene_copy'); ?>
 		</div>
@@ -130,13 +130,86 @@ get_header(); ?>
 </section> <!-- END Careers  -->
 
 <ul id="menuExp" class="subMenu">
-	<li class="subMenu__item"><a href="#working" class="subMenu__link">Capital Projects</a></li>
-	<li class="subMenu__item"><a href="#working" class="subMenu__link">Skilled Craft Maintenance</a></li>
-	<li class="subMenu__item"><a href="#benefits" class="subMenu__link">Turnarounds</a></li>
-	<li class="subMenu__item"><a href="#hiring" class="subMenu__link">Case Studies</a></li>
-</ul> <!-- END sub-menu -->
+	<li class="subMenu__item"><a href="#exp" class="subMenu__link">Experience</a></li>
+	<li class="subMenu__item"><a href="#cap" class="subMenu__link">Capital Projects</a></li>
+	<li class="subMenu__item"><a href="#skl" class="subMenu__link">Skilled Craft Maintenance</a></li>
+	<li class="subMenu__item"><a href="#trn" class="subMenu__link">Turnarounds</a></li>
+	<li class="subMenu__item"><a href="#cas" class="subMenu__link">Case Studies</a></li>
+</ul> <!-- END Experience sub-menu -->
 
-<section id="exp" class="wrap wrap--mxw mainCntnt"></section> <!-- END Experiences  -->
+<section id="exper" class="wrap wrap--mxw mainCntnt">
+
+	<div id="exp" class="flexBloc">
+		<div class="bloc">
+			<h2 class="hdln hdln--h2">Experience</h2>
+		</div>
+		<div class="bloc advanCopy">
+			<?php the_field('lc_exp_copy'); ?>
+		</div>
+	</div> <!-- END Experieince Intro -->
+
+	<div id="cap" class="flexBloc bloc--clr flexBloc--img">
+		<div class="bloc bloc--50 bloc--txt">
+			<h2 class="hdln hdln--h2 hdln--rev">Capital Projects</h3>
+			<?php the_field('lc_exp_cap_copy'); ?>
+		</div>
+		<div class="bloc bloc--50" style="background: url('<?php the_field('lc_exp_cap_img'); ?>') center center/cover no-repeat;"></div>
+	</div> <!-- END Capital Projects -->
+
+	<div id="skl" class="flexBloc flexBloc--img">
+		<div class="bloc bloc--50" style="background: url('<?php the_field('lc_exp_skl_img'); ?>') center center/cover no-repeat;"></div>
+		<div class="bloc bloc--50 bloc--txt">
+			<h2 class="hdln hdln--h2">Skilled Craft Maintenance</h3>
+			<?php the_field('lc_exp_skl_copy'); ?>
+		</div>
+	</div> <!-- END Skilled Craft Maintenance -->
+
+	<div id="trn" class="flexBloc bloc--txt">
+		<div class="bloc">
+			<h2 class="hdln hdln--h2">Turnarounds</h2>
+		</div>
+		<div class="bloc advanCopy ">
+			<?php the_field('lc_exp_trn_copy'); ?>
+		</div>
+	</div> <!-- END Turnarounds -->
+
+	<div id="cas" class="flexBloc flexBloc--cs bloc--txt">
+		<h2 class="hdln hdln--h2 hdln--cs">Case Studies</h3>
+		<?php if( have_rows('cs_stds') ): ?>
+		<?php while( have_rows('cs_stds') ): the_row(); 
+			// vars
+			$hdln = get_sub_field('cs_hdln');
+			$img = get_sub_field('cs_img');
+			$xcrpt = get_sub_field('cs_xcrpt');
+			$lnk = get_sub_field('cs_link');
+		?>	
+		<div class="bloc bloc--50 bloc--cs">
+			<h3 class="hdln hdln--csStd" ><?php echo $hdln; ?></h3>
+			
+			<?php if( $lnk ): ?>
+				<a href="<?php echo $lnk; ?>">
+			<?php endif; ?>
+				<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>" />
+			<?php if( $lnk ): ?>
+				</a>
+			<?php endif; ?>
+			
+			<p class="txt txt--csStd"><?php echo $xcrpt; ?></p>
+			
+			<?php if ($lnk): ?>
+				<a href="<?php echo $lnk ?>" class="bttn bttn--blue">Read Full Case Study
+			<?php endif; ?>
+			<?php if( $lnk ): ?>
+				</a>
+			<?php endif; ?>
+			
+		</div> <!-- END .caseStudy -->
+		<?php endwhile; ?>
+		<?php endif; ?>
+
+	</div> <!-- END Case Studies -->
+
+</section> <!-- END Experience  -->
 
 <ul id="menuCntct" class="subMenu">
 	<li class="subMenu__item"><a href="#cnt" class="subMenu__link">Contact Us</a></li>

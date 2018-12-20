@@ -40,7 +40,7 @@ section {}
 	background-position: center top;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 25vh;
+	height: 15vh;
 	width: 100%;
 	@include transition(all,0.3s,ease);
 	@media all and (min-width:$bp-3) {
@@ -397,6 +397,8 @@ body.page-id-21 .hero__img {
 		);
 	}
 }
+
+#trn { background-color: $grey-3; }
 
 //* NEWS
 //*===========================================

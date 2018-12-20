@@ -213,6 +213,10 @@ a.bttn--news {
 	width: 100%;
 }
 
+.hdln--cs {
+	width: 100%;
+}
+
 .hdln--csStd {
 	margin-bottom: $space;
 	@include transition(all,0.3s,ease);
@@ -329,7 +333,7 @@ a.bttn--news {
 	}
 }
 
-.colorBloc {
+.bloc--clr {
 	p, li { color: $white; }
 }
 
