@@ -232,61 +232,20 @@ get_header(); ?>
 		</div>
 	</div> <!-- END Form / Location -->
 
-	<div class="flexBloc">
-		<!-- Map code goes here -->
-	</div> <!-- END Map -->
-
 	<div id="hq" class="bloc">
-			<h2 class="hdln hdln--h2">Headquarters</h2>
-		</div>
+		<h2 class="hdln hdln--h2">Headquarters</h2>
 		<div class="bloc bloc--50">
 			<?php the_field('lc_cnt_hq'); ?>
 		</div>
 		<div class="bloc bloc--50">
-			<!-- Search By State -->
+		<!-- Search By State -->
 		</div>
 	</div> <!-- END HQ -->
 
 	<div class="flexBloc">
-		<?php if( have_rows('lc_reg_hq') ): ?>
-
-		<?php while( have_rows('lc_reg_hq') ): the_row(); 
-			// vars
-			$city = get_sub_field('lc_reg_hq_city');
-			$addr = get_sub_field('lc_reg_hq_addr');
-			$ph = get_sub_field('lc_reg_hq_phone');
-			$fx = get_sub_field('lc_reg_hq_fax');
-			$map = get_sub_field('lc_reg_hq_map');
-		?>
-
-		<div class="loc">
-			<div class="loc__addr">
-				<p class="txt txt--locCity"><?php echo $city; ?></p>
-				<p class="txt txt--body"><?php echo $addr; ?></p>
-			</div>
-			<div class="loc__phFx">
-				<p class="txt txt--body"><?php echo $ph; ?></p>
-				<p class="txt txt--body"><?php echo $fx; ?></p>
-			</div>
-			<div class="loc__map">
-				<?php if( $map ): ?>
-					<a href="<?php echo $map; ?>" class="btn">
-				<?php endif; ?>
-					Map
-				<?php if( $map ): ?>
-					</a>
-				<?php endif; ?>
-			</div>
-		</div>
-
-		<?php endwhile; ?>
-		<?php endif; ?>
-
-	</div> <!-- END Regional HQs -->
-
-	<div class="flexBloc">
-		<!-- Repeater for all locations goes here -->
-	</div> <!-- END Locations -->
+		<h1>MAP</h1>
+		<?php if (function_exists('ssf_wp_template')) {print ssf_wp_template('[SUPER-STORE-FINDER]');} ?>
+	</div> <!-- END Map -->
 
 </section> <!-- END Contact  -->
 
