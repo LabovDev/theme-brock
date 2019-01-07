@@ -4,7 +4,7 @@
 
 get_header(); ?>
 
-<?php while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <section class="hero">
 	<div class="hero__img" style="background-image: url('<?php the_field('hero_img'); ?>');"></div> <!-- END .hero__img -->
@@ -70,7 +70,7 @@ get_header(); ?>
 		</div>
 		<div class="bloc carCTAs">
 			<a href="https://brockgroup.csod.com/ats/careersite/search.aspx?site=1&c=brockgroup" class="bttn bttn--working" title="Online application.">Apply</a>
-			<a href="http://www.brockgroup.comcareers/hiring-locations/" class="bttn bttn--working" title="Find hiring center locations.">Find A Hiring Center</a>
+			<a href="#hiring" class="bttn bttn--working" title="Find hiring center locations.">Find A Hiring Center</a>
 		</div>
 	</div> <!-- END Working At Brock -->
 
@@ -84,7 +84,7 @@ get_header(); ?>
 		</div>
 		<div class="bloc carCTAs">
 			<a href="https://brockgroup.csod.com/ats/careersite/search.aspx?site=1&c=brockgroup" class="bttn bttn--working" title="Online application.">Apply</a>
-			<a href="http://www.brockgroup.comcareers/hiring-locations/" class="bttn bttn--working" title="Find hiring center locations.">Find A Hiring Center</a>
+			<a href="#hiring" class="bttn bttn--working" title="Find hiring center locations.">Find A Hiring Center</a>
 		</div>
 	</div>
 
@@ -211,13 +211,6 @@ get_header(); ?>
 
 </section> <!-- END Experience  -->
 
-<ul id="menuCntct" class="subMenu">
-	<li class="subMenu__item"><a href="#cnt" class="subMenu__link">Contact Us</a></li>
-	<li class="subMenu__item"><a href="#map" class="subMenu__link">Offices &amp; Projects Map</a></li>
-	<li class="subMenu__item"><a href="#hq" class="subMenu__link">Headquarters</a></li>
-	<li class="subMenu__item"><a href="#hq" class="subMenu__link">Find A Location</a></li>
-</ul> <!-- END sub-menu -->
-
 <section id="cnt" class="wrap wrap--mxw mainCntnt">
 	
 	<div id="cnt" class="flexBloc">
@@ -232,18 +225,8 @@ get_header(); ?>
 		</div>
 	</div> <!-- END Form / Location -->
 
-	<div id="hq" class="bloc">
-		<h2 class="hdln hdln--h2">Headquarters</h2>
-		<div class="bloc bloc--50">
-			<?php the_field('lc_cnt_hq'); ?>
-		</div>
-		<div class="bloc bloc--50">
-		<!-- Search By State -->
-		</div>
-	</div> <!-- END HQ -->
-
-	<div class="flexBloc">
-		<h1>MAP</h1>
+	<div id="map" class="bloc">
+		<h2 class="hdln hdln--h2">Brock Locations</h2>
 		<?php if (function_exists('ssf_wp_template')) {print ssf_wp_template('[SUPER-STORE-FINDER]');} ?>
 	</div> <!-- END Map -->
 
@@ -251,5 +234,5 @@ get_header(); ?>
 
 <!-- Add new stuff here -->
 
-<?php endwhile;?>
+<?php endwhile; endif; ?>
 <?php get_footer(); ?>
