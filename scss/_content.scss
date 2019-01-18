@@ -148,6 +148,8 @@ body.page-id-2333 #prdMIJ { display: block; }
 	margin-bottom: $space-3x;
 }
 
+#benefits .bloc--txt { padding: $space-3x $space 0 $space; }
+
 #cap {
 	@media all and (min-width:$bp-6) {
 		width: 100%;
