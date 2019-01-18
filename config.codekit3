@@ -421,6 +421,13 @@
 		"oAP": "/page_home.php",
 		"oF": 0
 		},
+	"/page_product.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page_product.php",
+		"oF": 0
+		},
 	"/screenshot.png": {
 		"ft": 32768,
 		"iS": 152998,

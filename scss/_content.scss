@@ -51,6 +51,7 @@ section {}
 body.page-id-21 .hero__img {
 	background-position: center top;
 }
+
 .bloc--about {
 	background-color: $grey-3;
 	padding: 0;
@@ -87,113 +88,6 @@ body.page-id-21 .hero__img {
 	);
 	}
 }
-
-.bloc--join {
-	flex-basis: 100%;
-	margin: $space-2x $space 0 $space;
-	padding: 0;
-	@media all and (min-width:$bp-2) {
-		flex-basis: 44%;
-		margin: $space-2x $space;
-	}
-}
-
-.bloc--urgent {
-	background: $white url('../images/job-alert-bckgrnd.png') top center/28px repeat-x;
-	margin: 2rem $space-half $space-2x $space-half;
-	padding: $space;
-}
-
-.bloc--srvcs, .bloc--prdcts,
-.bloc--xprncs, .bloc--bis {
-	@include flex-p(
-		column,
-		nowrap,
-		flex-start,
-		flex-start,
-		flex-start
-	);
-	padding: $space-4x $space 0 $space;
-	@media all and (min-width:$bp-3) {
-		@include flex-p(
-			row,
-			wrap,
-			flex-start,
-			flex-start,
-			flex-start
-		);
-	}
-}
-
-.bloc--bis {
-	padding: $space-4x $space;
-}
-
-.bloc__hdln {
-	flex-basis: 100%;
-	width: 100%;
-}
-
-.bloc__img {
-	@include transition(all,0.3s,ease);
-	@media all and (min-width:$bp-3) {
-		flex-basis: 48%;
-	}
-}
-
-.bloc__txt {
-	@include transition(all,0.3s,ease);
-	@media all and (min-width:$bp-3) {
-		flex-basis: 48%;
-	}
-}
-
-.bloc--prdcts .wrap--toCols .bloc__img,
-.bloc--bis .wrap--toCols .bloc__img {
-	@include transition(all,0.3s,ease);
-	@media all and (min-width:$bp-3) {
-		order: 3;
-	}
-}
-
-.bloc--prdcts .wrap--toCols .bloc__txt,
-.bloc--bis .wrap--toCols .bloc__txt {
-	@include transition(all,0.3s,ease);
-	@media all and (min-width:$bp-3) {
-		order: 2;
-	}
-}
-
-.bloc__news {
-	background-color: $grey-3;
-	padding: $space;
-}
-.bloc__newsWrap {
-	@include transition(all,0.3s,ease);
-	@media all and (min-width:$bp-2) {
-		@include flex-p(
-			row,
-			wrap,
-			flex-start,
-			flex-start,
-			flex-start
-		);
-		max-width: 600px;
-		margin: 0 auto;
-	}
-}
-
-.bloc__newsXcrpt {
-	margin-bottom: $space-3x;
-	max-width: 800px;
-	@include transition(all,0.3s,ease);
-	@media all and (min-width:$bp-2) {
-		flex-basis: 60%;
-		flex-grow: 1;
-		margin: $space-2x auto $space-3x auto;
-	}
-}
-
 
 //*  INTERIOR PAGES
 //*===========================================
@@ -245,6 +139,29 @@ body.page-id-21 .hero__img {
 .leader-list { border-top: 1px solid $grey-3; }
 .leader-list-last { border-bottom: none; }
 
+#prdMIJ { display: none; }
+
+body.page-id-2333 #prdMIJ { display: block; }
+.whyBrock {
+	background-color: $grey-3;
+	padding: 0 $space $space $space;
+	margin-bottom: $space-3x;
+}
+
+#cap {
+	@media all and (min-width:$bp-6) {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+#skl {
+	margin-bottom: 0;
+	@include transition(all, 0.3s, ease);
+	@media all and (min-width:$bp-6) {
+		margin-bottom: 5em;
+	}
+}
 
 //*  FOOTER
 //*===========================================
@@ -271,7 +188,7 @@ body.page-id-21 .hero__img {
 			space-between,
 			flex-start,
 			flex-start
-		)
+		);
 		margin: 0 auto;
 		max-width: $mxw;
 	}
@@ -380,6 +297,11 @@ body.page-id-21 .hero__img {
 #comm {
 	margin-left: -1rem; 
 	width: calc(100% + 2rem);
+	margin-bottom: 0;
+	@include transition(all, 0.3s, ease);
+	@media all and (min-width:$bp-6) {
+		margin-bottom: 5em;
+	}
 }
 
 .carCTAs {
@@ -388,7 +310,7 @@ body.page-id-21 .hero__img {
 		nowrap,
 		center, 
 		flex-start, 
-		flex-start,
+		flex-start
 	);
 	@include transition(all, 0.3s, ease);
 	@media all and (min-width:$bp-1) {
@@ -397,7 +319,7 @@ body.page-id-21 .hero__img {
 			nowrap,
 			center,
 			flex-start,
-			flex-start,
+			flex-start
 		);
 	}
 }

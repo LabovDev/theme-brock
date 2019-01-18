@@ -321,6 +321,14 @@ a.bttn--news {
 	}
 }
 
+.txt--prdList {
+	p { font-weight: bold; }
+	@include transition(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		margin-top: 36px;
+	}
+}
+
 .mainCntnt {
 	p, li {
 		font-family: $font-2;
