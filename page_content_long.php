@@ -184,7 +184,7 @@ get_header(); ?>
 			$lnk = get_sub_field('cs_link');
 		?>	
 		<div class="bloc bloc--50 bloc--cs">
-			<h3 class="hdln hdln--csStd" ><?php echo $hdln; ?></h3>
+			<h3 class="hdln hdln--csStd"><?php echo $hdln; ?></h3>
 			
 			<?php if( $lnk ): ?>
 				<a href="<?php echo $lnk; ?>">

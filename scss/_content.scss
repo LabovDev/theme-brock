@@ -146,6 +146,8 @@ body.page-id-2333 #prdMIJ { display: block; }
 	background-color: $grey-3;
 	padding: 0 $space $space $space;
 	margin-bottom: $space-3x;
+	.bloc--prd { padding: 0; }
+	.txt--prdList { margin-top: 0; }
 }
 
 #benefits .bloc--txt { padding: $space-3x $space 0 $space; }

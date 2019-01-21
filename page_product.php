@@ -47,8 +47,9 @@ get_header(); ?>
 
 <section class="wrap wrap--mxw mainCntnt">
 	<div class="flexBloc flexBloc--prd whyBrock">
+		<h2 class="hdln hdln--whyB">Why Brock?</h2>
 		<div class="bloc bloc--prd">
-			<h2 class="hdln hdln--prd">Why Brock?</h2>
+			
 			<?php the_field('prod_whyB'); ?>
 		</div>
 		<div class="bloc bloc--prd txt--prdList">

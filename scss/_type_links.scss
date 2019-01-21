@@ -138,6 +138,14 @@ a.bttn--news {
 	color: $white !important;
 }
 
+.hdln--whyB {
+	border-bottom: 4px solid $black;
+	padding-bottom: $space-qrtr;
+	padding-top: $space;
+	width: 100%;
+	flex-basis: 100%;
+}
+
 .hdln--hero {
 	color: $white;
 	font-size: 260%;
