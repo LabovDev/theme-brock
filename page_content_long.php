@@ -101,26 +101,20 @@ get_header(); ?>
 				$phone = get_sub_field('hc_phone');
 				$fax = get_sub_field('hc_fax');
 				$notes = get_sub_field('hc_notes');
-				$map = get_sub_field('hc_map');
+				$map_embed = get_sub_field('hc_map_embed');
 				
 			?>
-			<div class="bloc bloc--33 ">
+			<div class="bloc bloc--33">
 			<ul class="hrngCntr__loc">
 				<li class="hrngCntr__item hrngCntr__item--hdr"><?php echo $city; ?></li>
 				<li class="hrngCntr__item"><?php echo $addr; ?></li>
 				<li class="hrngCntr__item">Phone: <?php echo $phone; ?></li>
 				<li class="hrngCntr__item">Fax: <?php echo $fax; ?></li>
-				<li class="hrngCntr__item">
-					<?php if( $map ): ?>
-					<a href="<?php echo $map; ?>" title="Click to see a map of this location." target="_blank">
-					<?php endif; ?>
-						» Map
-					<?php if( $map ): ?>	
-					</a>
-					<?php endif; ?>
-				</li>
 				<li class="hrngCntr__item hrngCntr__item--note"><?php echo $notes; ?></li>
 			</ul>
+			<div class="mapEmbed">
+				<?php echo $map_embed; ?>
+			</div> <!-- END mapEmbed -->
 			</div>
 			<?php endwhile; ?>
 		

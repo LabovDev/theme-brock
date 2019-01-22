@@ -276,6 +276,7 @@ body.page-id-2333 #prdMIJ { display: block; }
 	.bloc--33 {
 		background-color: $grey-3;
 		margin-bottom: $space;
+		padding: 0;
 	}
 	@media all and (min-width:$bp-3) {
 		@include flex-p(
@@ -287,7 +288,20 @@ body.page-id-2333 #prdMIJ { display: block; }
 		);
 		.bloc--33 { 
 			width: 30%;
+			@include flex-p(
+				column,
+				wrap,
+				space-between,
+				stretch,
+				stretch
+			);
 		}
+	}
+	.hrngCntr__loc { 
+		padding: $space;
+	}
+	.mapEmbed {
+		border-top: 3px solid $white;
 	}
 }
 
